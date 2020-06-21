@@ -123,7 +123,7 @@ extension PhotoEditorViewController {
     }
     
     func hideControls() {
-        var controls = hiddenControls
+        let controls = hiddenControls
         
         for control in controls {
             if (control == "clear") {
