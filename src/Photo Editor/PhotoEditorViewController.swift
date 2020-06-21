@@ -74,7 +74,7 @@ public final class PhotoEditorViewController: UIViewController {
 
     //Register Custom font before we load XIB
     public override func loadView() {
-        registerFont()
+//        registerFont()
         super.loadView()
     }
     

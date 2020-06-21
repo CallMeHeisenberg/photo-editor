@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -120,6 +120,7 @@
 		059EA71B1EACB8790072C0FE /* Photo Editor */ = {
 			isa = PBXGroup;
 			children = (
+				80B7D594249FD69B006E74F8 /* fonts */,
 				056513081EF489B4009EA38F /* PhotoEditorViewController.swift */,
 				056513091EF489B4009EA38F /* StickersViewController.swift */,
 				0565130A1EF489B4009EA38F /* ColorCollectionViewCell.swift */,
@@ -149,7 +150,6 @@
 				0565132A1EF489C0009EA38F /* StickersViewController.xib */,
 				0565132B1EF489C0009EA38F /* ColorCollectionViewCell.xib */,
 				0565132C1EF489C0009EA38F /* EmojiCollectionViewCell.xib */,
-				0565132D1EF489C0009EA38F /* icomoon.ttf */,
 				0565132E1EF489C0009EA38F /* LaunchScreen.storyboard */,
 				0565132F1EF489C0009EA38F /* PhotoCropEditorBorder.png */,
 				056513301EF489C0009EA38F /* PhotoCropEditorBorder@2x.png */,
@@ -161,6 +161,14 @@
 				059EA7281EACB8790072C0FE /* Info.plist */,
 			);
 			path = "Photo Editor";
+			sourceTree = "<group>";
+		};
+		80B7D594249FD69B006E74F8 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0565132D1EF489C0009EA38F /* icomoon.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +199,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 1150;
-				ORGANIZATIONNAME = "Mohamed Hamed";
+				ORGANIZATIONNAME = Snooper;
 				TargetAttributes = {
 					059EA7181EACB8790072C0FE = {
 						CreatedOnToolsVersion = 8.3;
@@ -201,7 +209,7 @@
 				};
 			};
 			buildConfigurationList = 059EA7141EACB8780072C0FE /* Build configuration list for PBXProject "Photo Editor" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -394,7 +402,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -407,7 +416,10 @@
 				DEVELOPMENT_TEAM = U9QJQXD39B;
 				INFOPLIST_FILE = "Photo Editor/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.snooper.photoeditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,7 +435,10 @@
 				DEVELOPMENT_TEAM = U9QJQXD39B;
 				INFOPLIST_FILE = "Photo Editor/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.snooper.photoeditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
