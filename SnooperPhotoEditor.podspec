@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = "SnooperPhotoEditor"
-  s.version          = "1.1.1"
+  s.version          = "1.1.2"
   s.summary          = "Snooper's custom photo editor."
   s.homepage         = "https://github.com/CallMeHeisenberg/photo-editor"
   s.license          = { :type => 'MIT', :file => 'LICENSE.md' }
   s.author           = { "JustHeisenberg" => "ivanov@univ3rse.com" }
-  s.source           = { :git => "https://github.com/CallMeHeisenberg/photo-editor.git", :tag => s.version }
+  s.source           = { :git => "https://github.com/CallMeHeisenberg/photo-editor.git" }
 
   s.ios.deployment_target = '9.0'
   s.swift_version = '5'
